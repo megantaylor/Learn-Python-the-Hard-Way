@@ -33,4 +33,4 @@ elif door == "2":
 		print "The insanity rots your eyes into a pool of muck. You are now blind."
 		
 else:
-	print "You stumble around fall through a trapdoor into a pit full of spikes. You die."
+	print "You stumble around and fall through a trapdoor into a pit full of spikes. You die."
