@@ -2,12 +2,13 @@ from sys import exit
 
 def gold_room():
 	print "This room is full of gold. How much do you take?"
-	
-	next = raw_input("> ")
-	if "0" in next or "1" in next:
-		how_much = int(next)
-	else:
-		dead("Man, learn to type a number.")
+	while True:
+		try:
+			next = raw_input("> ")
+			how_much = int(next)
+			break
+		except ValueError:
+		    print "That's not a number... try again!"
 		
 	if 50 > how_much:
 		print "You're not greedy, you win!"
